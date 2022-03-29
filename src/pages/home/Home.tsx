@@ -13,6 +13,7 @@ import {
   IonTitle
 } from "@ionic/react";
 import SlateGridHamilton from "../../components/slate-grid-hamilton/slate-grid-hamilton";
+import Card from "../../components/card/card";
 
 const Home = () => (
   <>
@@ -28,6 +29,11 @@ const Home = () => (
       <IonGrid>
         <IonRow>
           <IonCol>
+            <Card
+            title="Retorno do presencial"
+            date="04/04/2022"
+            description="Data da 1ª aula, geral para o câmpus. Sujeito a alterações."
+            />
           </IonCol>
         </IonRow>
         <IonRow>
