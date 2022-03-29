@@ -12,7 +12,7 @@ import {
   IonCardTitle,
   IonTitle
 } from "@ionic/react";
-import SlateGridHamilton from "../components/SlateGridHamilton";
+import SlateGridHamilton from "../../components/slate-grid-hamilton/slate-grid-hamilton";
 
 const Home = () => (
   <>

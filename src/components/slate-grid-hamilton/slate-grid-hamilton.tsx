@@ -1,6 +1,6 @@
 import { IonAvatar, IonCol, IonGrid, IonImg, IonRow, IonText } from '@ionic/react';
 import React from 'react';
-import './SlateGridHamilton.scss';
+import './slate-grid-hamilton.scss';
 
 const SlateGridHamilton: React.FC = () => {
   return (
