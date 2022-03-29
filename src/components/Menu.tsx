@@ -12,7 +12,7 @@ import {
 
 import { useLocation } from 'react-router-dom';
 import { bookOutline, bookSharp, easelOutline, easelSharp, folderOpenOutline, folderOpenSharp, homeOutline, homeSharp, listOutline, listSharp, medkitOutline, medkitSharp, peopleOutline, peopleSharp } from 'ionicons/icons';
-import './Menu.css';
+import './Menu.scss';
 
 interface AppPage {
   url: string;
