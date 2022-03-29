@@ -9,8 +9,10 @@ import {
   IonCol,
   IonCard,
   IonCardHeader,
-  IonCardTitle
+  IonCardTitle,
+  IonTitle
 } from "@ionic/react";
+import SlateGridHamilton from "../components/SlateGridHamilton";
 
 const Home = () => (
   <>
@@ -19,6 +21,7 @@ const Home = () => (
         <IonButtons slot="start">
           <IonMenuButton></IonMenuButton>
         </IonButtons>
+        <IonTitle>Página inicial</IonTitle>
       </IonToolbar>
     </IonHeader>
     <IonContent>
@@ -51,7 +54,7 @@ const Home = () => (
         escolhida por meio de eleições periódicas, entre chapas de alunos do curso.
       </p>
       <h1 className="ion-padding">Chapa Margaret Hamilton</h1>
-      {/*<app-slate-hamilton-grid></app-slate-hamilton-grid>*/}
+      <SlateGridHamilton />
     </IonContent>
   </>
 );
