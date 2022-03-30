@@ -2,9 +2,9 @@ import { IonAvatar, IonCol, IonGrid, IonImg, IonRow, IonText } from '@ionic/reac
 import React from 'react';
 import './slate-grid-hamilton.scss';
 
-const SlateGridHamilton: React.FC = () => {
+const SlateGridHamilton = (props: any) => {
   return (
-    <IonGrid className='grid'>
+    <IonGrid className={'grid ' + props.className}>
       <IonRow>
         <IonCol>
           <IonRow>
