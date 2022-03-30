@@ -1,4 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonTitle, IonToolbar } from "@ionic/react";
+import './page-layout.scss'
 
 interface PageProps {
   title: string;
@@ -18,9 +19,8 @@ const PageLayout = (props: PageProps) => {
           </IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent id="content">
         <props.content />
-        <div style={{marginBottom: 80}} />
       </IonContent>
     </>
   );
