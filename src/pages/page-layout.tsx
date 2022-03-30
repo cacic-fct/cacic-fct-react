@@ -20,6 +20,7 @@ const PageLayout = (props: PageProps) => {
       </IonHeader>
       <IonContent>
         <props.content />
+        <div style={{marginBottom: 80}} />
       </IonContent>
     </>
   );
