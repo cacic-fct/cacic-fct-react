@@ -34,16 +34,7 @@ const Home = () => {
   ];
 
   return (
-  <>
-    <IonHeader translucent={true}>
-      <IonToolbar>
-        <IonButtons slot="start">
-          <IonMenuButton></IonMenuButton>
-        </IonButtons>
-        <IonTitle>Página inicial</IonTitle>
-      </IonToolbar>
-    </IonHeader>
-    <IonContent>
+    <>
       <IonGrid>
         <IonRow>
           <IonCol>
@@ -82,11 +73,8 @@ const Home = () => {
         escolhida por meio de eleições periódicas, entre chapas de alunos do curso.
       </p>
       <h1 className="ion-padding">Chapa Margaret Hamilton</h1>
-      <div style={{marginBottom: 60}}>
-        <SlateGridHamilton />
-      </div>
-    </IonContent>
-  </>
+      <SlateGridHamilton />
+    </>
   )
 }
 

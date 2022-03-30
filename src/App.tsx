@@ -2,13 +2,16 @@ import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/r
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/menu/menu';
+import PageLayout from './pages/page-layout';
 import Home from './pages/home/home';
+import Pandemia from './pages/pandemia/pandemia';
 
 // Global SCSS
 import './globals.scss';
 
 /* Theme variables */
 import './theme/variables.scss';
+
 
 setupIonicReact();
 
@@ -23,7 +26,10 @@ const App: React.FC = () => {
               <Redirect to="/home" />
             </Route>
             <Route path="/home" exact={true}>
-              <Home />
+              <PageLayout title='Página inicial' content={Home} />
+            </Route>
+            <Route path="/pandemia" exact={true}>
+              <PageLayout title='Pandemia da COVID-19' content={Pandemia} />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
