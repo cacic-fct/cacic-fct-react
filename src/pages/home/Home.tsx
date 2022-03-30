@@ -72,17 +72,19 @@ const Home = () => {
         </IonRow>
       </IonGrid>
 
-      <h1 className="ion-padding no-margin-bottom">
+      <h1 className="ion-padding" style={{marginBottom: 0}}>
         O CACiC
       </h1>
-      <p className="ion-padding-horizontal no-margin-top">
+      <p className="ion-padding-horizontal" style={{marginTop: 0}}>
         O Centro Acadêmico de Ciência da Computação é o órgão de representação
         estudantil do curso de Bacharelado em Ciência da Computação da FCT-Unesp. A
         organização defende os interesses e direitos dos alunos. A direção do CA é
         escolhida por meio de eleições periódicas, entre chapas de alunos do curso.
       </p>
       <h1 className="ion-padding">Chapa Margaret Hamilton</h1>
-      <SlateGridHamilton className='margin-bottom-50' />
+      <div style={{marginBottom: 60}}>
+        <SlateGridHamilton />
+      </div>
     </IonContent>
   </>
   )
