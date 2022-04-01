@@ -16,6 +16,7 @@ import "./globals.scss";
 
 /* Theme variables */
 import "./theme/variables.scss";
+import CardWrapper from "./components/card-wrapper/card-wrapper";
 
 setupIonicReact();
 
@@ -37,6 +38,11 @@ const App: React.FC = () => {
             <Route path="/pandemia" exact={true}>
               <PageLayout title="Pandemia da COVID-19">
                 <Pandemia />
+              </PageLayout>
+            </Route>
+            <Route>
+              <PageLayout title="Página não encontrada">
+                <CardWrapper title="Essa página não existe." />
               </PageLayout>
             </Route>
           </IonRouterOutlet>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonTitle, IonToolbar } from "@ionic/react";
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import './page-layout.scss'
 
 interface PageProps {
@@ -8,7 +8,7 @@ interface PageProps {
 
 const PageLayout = (props: React.PropsWithChildren<PageProps>) => {
   return (
-    <>
+    <IonPage>
       <IonHeader translucent={true}>
         <IonToolbar>
           <IonButtons slot="start">
@@ -22,7 +22,7 @@ const PageLayout = (props: React.PropsWithChildren<PageProps>) => {
       <IonContent id="content">
         {props.children}
       </IonContent>
-    </>
+    </IonPage>
   );
 }
 
