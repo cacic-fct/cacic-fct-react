@@ -8,7 +8,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import "./page-layout.scss";
 
 interface PageProps {
   title: string;
