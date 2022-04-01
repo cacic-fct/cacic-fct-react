@@ -8,11 +8,26 @@ import {
   IonMenu,
   IonMenuToggle,
   IonNote,
-} from '@ionic/react';
+} from "@ionic/react";
 
-import { useLocation } from 'react-router-dom';
-import { bookOutline, bookSharp, easelOutline, easelSharp, folderOpenOutline, folderOpenSharp, homeOutline, homeSharp, listOutline, listSharp, medkitOutline, medkitSharp, peopleOutline, peopleSharp } from 'ionicons/icons';
-import './menu.scss';
+import { useLocation } from "react-router-dom";
+import {
+  bookOutline,
+  bookSharp,
+  easelOutline,
+  easelSharp,
+  folderOpenOutline,
+  folderOpenSharp,
+  homeOutline,
+  homeSharp,
+  listOutline,
+  listSharp,
+  medkitOutline,
+  medkitSharp,
+  peopleOutline,
+  peopleSharp,
+} from "ionicons/icons";
+import "./menu.scss";
 
 interface AppPage {
   url: string;
@@ -23,47 +38,47 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Página inicial',
-    url: '/home',
+    title: "Página inicial",
+    url: "/home",
     iosIcon: homeOutline,
-    mdIcon: homeSharp
+    mdIcon: homeSharp,
   },
   {
-    title: 'Pandemia da COVID-19',
-    url: '/pandemia',
+    title: "Pandemia da COVID-19",
+    url: "/pandemia",
     iosIcon: medkitOutline,
-    mdIcon: medkitSharp
+    mdIcon: medkitSharp,
   },
   {
-    title: 'Eventos',
-    url: '/eventos',
+    title: "Eventos",
+    url: "/eventos",
     iosIcon: easelOutline,
-    mdIcon: easelSharp
+    mdIcon: easelSharp,
   },
   {
-    title: 'Página dos calouros',
-    url: '/calouros',
+    title: "Página dos calouros",
+    url: "/calouros",
     iosIcon: peopleOutline,
-    mdIcon: peopleSharp
+    mdIcon: peopleSharp,
   },
   {
-    title: 'Manual do calouro',
-    url: '/manual-do-calouro',
+    title: "Manual do calouro",
+    url: "/manual-do-calouro",
     iosIcon: bookOutline,
-    mdIcon: bookSharp
+    mdIcon: bookSharp,
   },
   {
-    title: 'Transparência',
-    url: '/transparencia',
+    title: "Transparência",
+    url: "/transparencia",
     iosIcon: folderOpenOutline,
-    mdIcon: folderOpenSharp
+    mdIcon: folderOpenSharp,
   },
   {
-    title: 'Árvore de links',
-    url: '/links',
+    title: "Árvore de links",
+    url: "/links",
     iosIcon: listOutline,
-    mdIcon: listSharp
-  }
+    mdIcon: listSharp,
+  },
 ];
 
 const Menu: React.FC = () => {
@@ -78,8 +93,20 @@ const Menu: React.FC = () => {
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
-                <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                  <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
+                <IonItem
+                  className={
+                    location.pathname === appPage.url ? "selected" : ""
+                  }
+                  routerLink={appPage.url}
+                  routerDirection="none"
+                  lines="none"
+                  detail={false}
+                >
+                  <IonIcon
+                    slot="start"
+                    ios={appPage.iosIcon}
+                    md={appPage.mdIcon}
+                  />
                   <IonLabel>{appPage.title}</IonLabel>
                 </IonItem>
               </IonMenuToggle>

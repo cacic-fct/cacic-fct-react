@@ -1,6 +1,6 @@
-import { IonIcon, IonItem, IonLabel } from "@ionic/react"; 
-import { warning } from "ionicons/icons"
-import './link-item.scss'
+import { IonIcon, IonItem, IonLabel } from "@ionic/react";
+import { warning } from "ionicons/icons";
+import "./link-item.scss";
 
 interface LinkItemProps {
   title: string;
@@ -10,13 +10,11 @@ interface LinkItemProps {
 
 const LinkItem = (props: LinkItemProps) => {
   return (
-    <IonItem href={props.url} target='_blank'>
-      <IonIcon id='icon'  ios={props.icon} md={props.icon} slot='start' />
-      <IonLabel className='ion-text-wrap'>
-        {props.title}
-      </IonLabel>
+    <IonItem href={props.url} target="_blank">
+      <IonIcon id="icon" ios={props.icon} md={props.icon} slot="start" />
+      <IonLabel className="ion-text-wrap">{props.title}</IonLabel>
     </IonItem>
-  )
-}
+  );
+};
 
 export default LinkItem;
