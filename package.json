@@ -46,7 +46,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettify": "prettier --write .\\src\\*"
   },
   "eslintConfig": {
     "extends": [
@@ -67,7 +68,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.4.3"
+    "@capacitor/cli": "3.4.3",
+    "prettier": "2.6.1"
   },
   "description": "Projeto de Webpage do cacic-fct, mas utilizando React"
 }

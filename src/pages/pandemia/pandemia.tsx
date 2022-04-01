@@ -77,9 +77,9 @@ const Pandemia = () => {
       <IonRow>
         <IonCol>
           <Card
-          title="Retorno do presencial"
-          date="04/04/2022"
-          description="Data da 1ª aula, geral para o câmpus. Sujeito a alterações."
+            title="Retorno do presencial"
+            date="04/04/2022"
+            description="Data da 1ª aula, geral para o câmpus. Sujeito a alterações."
           />
         </IonCol>
       </IonRow>
@@ -89,9 +89,9 @@ const Pandemia = () => {
             {
               infoList.map(entry => (
                 <LinkItemDate
-                content={entry.content}
-                date={entry.date}
-                url={entry.url}
+                  content={entry.content}
+                  date={entry.date}
+                  url={entry.url}
                 />
               ))
             }
