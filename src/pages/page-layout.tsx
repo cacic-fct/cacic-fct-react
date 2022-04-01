@@ -1,12 +1,12 @@
+import React from 'react';
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonTitle, IonToolbar } from "@ionic/react";
 import './page-layout.scss'
 
 interface PageProps {
   title: string;
-  content: () => JSX.Element;
 }
 
-const PageLayout = (props: PageProps) => {
+const PageLayout = (props: React.PropsWithChildren<PageProps>) => {
   return (
     <>
       <IonHeader translucent={true}>
@@ -20,7 +20,7 @@ const PageLayout = (props: PageProps) => {
         </IonToolbar>
       </IonHeader>
       <IonContent id="content">
-        <props.content />
+        {props.children}
       </IonContent>
     </>
   );

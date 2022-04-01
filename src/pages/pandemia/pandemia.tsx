@@ -1,16 +1,10 @@
 import {
-  IonHeader,
-  IonToolbar,
-  IonButtons,
-  IonMenuButton,
-  IonContent,
   IonGrid,
   IonRow,
   IonCol,
   IonCard,
   IonCardHeader,
-  IonCardTitle,
-  IonTitle
+  IonCardTitle
 } from "@ionic/react";
 //import { calendar, people } from "ionicons/icons";
 
@@ -18,6 +12,7 @@ import { calendar, analytics, book } from "ionicons/icons";
 import Card from "../../components/card/card";
 import LinkItem from "../../components/link-item/link-item";
 import LinkItemDate from "../../components/link-item-date/link-item-date";
+import CardWrapper from "../../components/card-wrapper/card-wrapper";
 
 const Pandemia = () => {
   const infoList = [
@@ -90,12 +85,7 @@ const Pandemia = () => {
       </IonRow>
       <IonRow>
         <IonCol>
-          <IonCard>
-            <IonCardHeader>
-              <IonCardTitle>
-                Últimas informações
-              </IonCardTitle>
-            </IonCardHeader>
+          <CardWrapper title='Últimas informações'>
             {
               infoList.map(entry => (
                 <LinkItemDate
@@ -105,23 +95,18 @@ const Pandemia = () => {
                 />
               ))
             }
-          </IonCard>
+          </CardWrapper>
         </IonCol>
       </IonRow>
       <IonRow>
         <IonCol>
-          <IonCard>
-              <IonCardHeader>
-                <IonCardTitle>
-                  Acesso rápido
-                </IonCardTitle>
-              </IonCardHeader>
-              {
-                urlList.map(entry => (
-                  LinkItem(entry)
-                ))
-              }
-            </IonCard>
+          <CardWrapper title='Acesso rápido'>
+            {
+              urlList.map(entry => (
+                LinkItem(entry)
+              ))
+            }
+          </CardWrapper>
         </IonCol>
       </IonRow>
     </IonGrid>

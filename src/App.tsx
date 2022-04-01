@@ -26,10 +26,14 @@ const App: React.FC = () => {
               <Redirect to="/home" />
             </Route>
             <Route path="/home" exact={true}>
-              <PageLayout title='Página inicial' content={Home} />
+              <PageLayout title='Página inicial'>
+                <Home />
+              </PageLayout> 
             </Route>
             <Route path="/pandemia" exact={true}>
-              <PageLayout title='Pandemia da COVID-19' content={Pandemia} />
+              <PageLayout title='Pandemia da COVID-19'>
+                <Pandemia />
+              </PageLayout>
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

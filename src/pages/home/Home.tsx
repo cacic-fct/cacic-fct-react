@@ -13,6 +13,7 @@ import {
   IonTitle
 } from "@ionic/react";
 import { calendar, people } from "ionicons/icons";
+import CardWrapper from "../../components/card-wrapper/card-wrapper";
 
 import Card from "../../components/card/card";
 import LinkItem from "../../components/link-item/link-item";
@@ -47,18 +48,13 @@ const Home = () => {
         </IonRow>
         <IonRow>
           <IonCol>
-            <IonCard>
-              <IonCardHeader>
-                <IonCardTitle>
-                  Acesso rápido
-                </IonCardTitle>
-              </IonCardHeader>
+            <CardWrapper title='Acesso rápido'>
               {
                 urlList.map(entry => (
                   LinkItem(entry)
                 ))
               }
-            </IonCard>
+            </CardWrapper>
           </IonCol>
         </IonRow>
       </IonGrid>
