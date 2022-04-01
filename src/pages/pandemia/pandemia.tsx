@@ -14,7 +14,9 @@ import {
 } from "@ionic/react";
 //import { calendar, people } from "ionicons/icons";
 
+import { calendar, analytics, book } from "ionicons/icons";
 import Card from "../../components/card/card";
+import LinkItem from "../../components/link-item/link-item";
 import LinkItemDate from "../../components/link-item-date/link-item-date";
 
 const Pandemia = () => {
@@ -57,6 +59,24 @@ const Pandemia = () => {
     },
   ];
 
+  const urlList = [
+    {
+      title: 'Calendário do câmpus',
+      icon: calendar,
+      url: 'https://www.fct.unesp.br/#!/administracao/graduacao/espaco-do-aluno/',
+    },
+    {
+      title: 'Casos de COVID-19 em Prudente',
+      icon: analytics,
+      url: 'https://inovaprudente.com.br/coronavirus',
+    },
+    {
+      title: 'Diretrizes para a reorganização das atividades',
+      icon: book,
+      url: 'https://unesp.br/portal#!/covid19/reorganizacao-das-atividades/estrategia/',
+    },
+  ];
+
   return (
     <IonGrid>
       <IonRow>
@@ -86,6 +106,22 @@ const Pandemia = () => {
               ))
             }
           </IonCard>
+        </IonCol>
+      </IonRow>
+      <IonRow>
+        <IonCol>
+          <IonCard>
+              <IonCardHeader>
+                <IonCardTitle>
+                  Acesso rápido
+                </IonCardTitle>
+              </IonCardHeader>
+              {
+                urlList.map(entry => (
+                  LinkItem(entry)
+                ))
+              }
+            </IonCard>
         </IonCol>
       </IonRow>
     </IonGrid>

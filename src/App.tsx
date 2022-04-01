@@ -3,7 +3,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/menu/menu';
 import PageLayout from './pages/page-layout';
-import Home from './pages/home/home';
+import Home from './pages/home/Home';
 import Pandemia from './pages/pandemia/pandemia';
 
 // Global SCSS
