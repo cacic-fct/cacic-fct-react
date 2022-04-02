@@ -9,77 +9,34 @@ import {
   IonMenuToggle,
   IonNote,
 } from "@ionic/react";
-
+import * as Ionicons from "ionicons/icons";
 import { useLocation } from "react-router-dom";
-import {
-  bookOutline,
-  bookSharp,
-  easelOutline,
-  easelSharp,
-  folderOpenOutline,
-  folderOpenSharp,
-  homeOutline,
-  homeSharp,
-  listOutline,
-  listSharp,
-  medkitOutline,
-  medkitSharp,
-  peopleOutline,
-  peopleSharp,
-} from "ionicons/icons";
 import "./menu.scss";
+import menuItems from "./menu-items.json";
+
+// Permite resgatar os Ionicons a partir de uma string
+// Se não existir um Ionicon associado à string, retorna undefined
+const IoniconsByString = Ionicons as Record<string, string | undefined>;
 
 interface AppPage {
   url: string;
-  iosIcon: string;
-  mdIcon: string;
+  iosIcon?: string;
+  mdIcon?: string;
   title: string;
 }
 
-const appPages: AppPage[] = [
-  {
-    title: "Página inicial",
-    url: "/home",
-    iosIcon: homeOutline,
-    mdIcon: homeSharp,
-  },
-  {
-    title: "Pandemia da COVID-19",
-    url: "/pandemia",
-    iosIcon: medkitOutline,
-    mdIcon: medkitSharp,
-  },
-  {
-    title: "Eventos",
-    url: "/eventos",
-    iosIcon: easelOutline,
-    mdIcon: easelSharp,
-  },
-  {
-    title: "Página dos calouros",
-    url: "/calouros",
-    iosIcon: peopleOutline,
-    mdIcon: peopleSharp,
-  },
-  {
-    title: "Manual do calouro",
-    url: "/manual-do-calouro",
-    iosIcon: bookOutline,
-    mdIcon: bookSharp,
-  },
-  {
-    title: "Transparência",
-    url: "/transparencia",
-    iosIcon: folderOpenOutline,
-    mdIcon: folderOpenSharp,
-  },
-  {
-    title: "Árvore de links",
-    url: "/links",
-    iosIcon: listOutline,
-    mdIcon: listSharp,
-  },
-];
+const appPages: AppPage[] = [];
+menuItems.map((entry, index) => {
+  appPages[index] = entry;
+  // Utiliza a string com o nome do ícone presente no arquivo .json
+  // e recebe a string exportada pelo Ionicons.
+  if (typeof appPages[index].mdIcon == "string") {
+    appPages[index].mdIcon = IoniconsByString[appPages[index].mdIcon as string];
+  }
+  if (typeof appPages[index].iosIcon == "string")
+    appPages[index].iosIcon =
+      IoniconsByString[appPages[index].iosIcon as string];
+});
 
 const Menu: React.FC = () => {
   const location = useLocation();
