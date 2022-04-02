@@ -25,11 +25,11 @@ interface AppPage {
   title: string;
 }
 
-const appPages: AppPage[] = menuItems.map(entry => ({
+const appPages: AppPage[] = menuItems.map((entry) => ({
   title: entry.title,
   url: entry.url,
   iosIcon: IoniconsByString[entry.iosIcon],
-  mdIcon: IoniconsByString[entry.mdIcon]
+  mdIcon: IoniconsByString[entry.mdIcon],
 }));
 
 const Menu: React.FC = () => {
