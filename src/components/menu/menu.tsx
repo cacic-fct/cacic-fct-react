@@ -25,18 +25,12 @@ interface AppPage {
   title: string;
 }
 
-const appPages: AppPage[] = [];
-menuItems.map((entry, index) => {
-  appPages[index] = entry;
-  // Utiliza a string com o nome do ícone presente no arquivo .json
-  // e recebe a string exportada pelo Ionicons.
-  if (typeof appPages[index].mdIcon == "string") {
-    appPages[index].mdIcon = IoniconsByString[appPages[index].mdIcon as string];
-  }
-  if (typeof appPages[index].iosIcon == "string")
-    appPages[index].iosIcon =
-      IoniconsByString[appPages[index].iosIcon as string];
-});
+const appPages: AppPage[] = menuItems.map(entry => ({
+  title: entry.title,
+  url: entry.url,
+  iosIcon: IoniconsByString[entry.iosIcon],
+  mdIcon: IoniconsByString[entry.mdIcon]
+}));
 
 const Menu: React.FC = () => {
   const location = useLocation();
