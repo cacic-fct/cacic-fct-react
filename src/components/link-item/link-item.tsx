@@ -1,5 +1,4 @@
 import { IonIcon, IonItem, IonLabel } from "@ionic/react";
-import { warning } from "ionicons/icons";
 import "./link-item.scss";
 
 interface LinkItemProps {

@@ -1,5 +1,4 @@
-import { IonIcon, IonItem, IonLabel, IonText } from "@ionic/react";
-import { warning } from "ionicons/icons";
+import { IonItem, IonLabel, IonText } from "@ionic/react";
 
 interface LinkItemDateProps {
   date: string;

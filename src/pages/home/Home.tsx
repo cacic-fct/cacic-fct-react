@@ -1,17 +1,4 @@
-import {
-  IonHeader,
-  IonToolbar,
-  IonButtons,
-  IonMenuButton,
-  IonContent,
-  IonGrid,
-  IonRow,
-  IonCol,
-  IonCard,
-  IonCardHeader,
-  IonCardTitle,
-  IonTitle,
-} from "@ionic/react";
+import { IonGrid, IonRow, IonCol } from "@ionic/react";
 import { calendar, people } from "ionicons/icons";
 import CardWrapper from "../../components/card-wrapper/card-wrapper";
 

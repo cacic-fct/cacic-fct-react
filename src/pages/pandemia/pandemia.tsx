@@ -1,12 +1,4 @@
-import {
-  IonGrid,
-  IonRow,
-  IonCol,
-  IonCard,
-  IonCardHeader,
-  IonCardTitle,
-} from "@ionic/react";
-//import { calendar, people } from "ionicons/icons";
+import { IonGrid, IonRow, IonCol } from "@ionic/react";
 
 import { calendar, analytics, book } from "ionicons/icons";
 import Card from "../../components/card/card";

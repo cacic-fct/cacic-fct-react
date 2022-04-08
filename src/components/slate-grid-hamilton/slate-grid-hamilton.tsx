@@ -6,7 +6,6 @@ import {
   IonRow,
   IonText,
 } from "@ionic/react";
-import React from "react";
 import "./slate-grid-hamilton.scss";
 
 const SlateGridHamilton = () => {
