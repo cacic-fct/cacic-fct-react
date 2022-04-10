@@ -19,6 +19,7 @@ import "./theme/variables.scss";
 import CardWrapper from "./components/card-wrapper/card-wrapper";
 import Eventos from "./pages/eventos/eventos";
 import Transparencia from "./pages/transparencia/transparencia";
+import ArvoreLinks from "./pages/arvore-links/arvore-links";
 
 setupIonicReact();
 
@@ -55,6 +56,11 @@ const App: React.FC = () => {
             <Route>
               <PageLayout title="Página não encontrada">
                 <CardWrapper title="Essa página não existe." />
+              </PageLayout>
+            </Route>
+            <Route path="/links" exact={true}>
+              <PageLayout title="Árvore de Links">
+                <ArvoreLinks />
               </PageLayout>
             </Route>
           </IonRouterOutlet>
