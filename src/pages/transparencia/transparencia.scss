@@ -1,0 +1,23 @@
+.card-col {
+  display: flex;
+  min-width: 210px;
+  max-width: 500px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-with-url {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  :hover {
+    filter: brightness(111%);
+    -webkit-filter: brightness(111%);
+  }
+}

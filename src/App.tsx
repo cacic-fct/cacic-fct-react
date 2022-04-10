@@ -18,6 +18,7 @@ import "./globals.scss";
 import "./theme/variables.scss";
 import CardWrapper from "./components/card-wrapper/card-wrapper";
 import Eventos from "./pages/eventos/eventos";
+import Transparencia from "./pages/transparencia/transparencia";
 
 setupIonicReact();
 
@@ -44,6 +45,11 @@ const App: React.FC = () => {
             <Route path="/eventos" exact={true}>
               <PageLayout title="Eventos">
                 <Eventos />
+              </PageLayout>
+            </Route>
+            <Route path="/transparencia" exact={true}>
+              <PageLayout title="Transparência">
+                <Transparencia />
               </PageLayout>
             </Route>
             <Route>
