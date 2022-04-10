@@ -14,13 +14,8 @@ const LinkItem = (props: LinkItemProps) => {
       <IonIcon id="icon" ios={props.icon} md={props.icon} slot="start" />
       <IonLabel className="ion-text-wrap">
         {props.title}
-        <p
-        className="ion-text-justify"
-        >
-          {props.content}
-        </p>
+        <p className="ion-text-justify">{props.content}</p>
       </IonLabel>
-      
     </IonItem>
   );
 };
