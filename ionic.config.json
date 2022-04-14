@@ -1,7 +1,6 @@
 {
   "name": "ionic-react-template",
   "integrations": {
-    "capacitor": {}
   },
   "type": "react"
 }
