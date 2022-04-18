@@ -13,10 +13,10 @@ const LinkItem = (props: LinkItemProps) => {
   return (
     <IonItem href={props.url} target="_blank">
       <IonIcon
-      id="icon"
-      ios={getIoniconByString(props.icon)}
-      md={getIoniconByString(props.icon)}
-      slot="start"
+        id="icon"
+        ios={getIoniconByString(props.icon)}
+        md={getIoniconByString(props.icon)}
+        slot="start"
       />
       <IonLabel className="ion-text-wrap">
         {props.title}

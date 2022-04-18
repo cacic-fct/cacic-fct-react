@@ -7,7 +7,7 @@ interface SlateGridHamiltonItemProps {
 }
 
 const SlateGridHamiltonItem = (props: SlateGridHamiltonItemProps) => {
-  const relativePath = process.env.PUBLIC_URL + 'assets\\people\\';
+  const relativePath = process.env.PUBLIC_URL + "assets\\people\\";
 
   return (
     <IonCol>
@@ -18,16 +18,16 @@ const SlateGridHamiltonItem = (props: SlateGridHamiltonItemProps) => {
       </IonRow>
       <IonRow className="grid-text">
         <div>
-          <IonText>{ props.name }</IonText>
+          <IonText>{props.name}</IonText>
         </div>
       </IonRow>
       <IonRow className="grid-text">
         <div>
-          <IonText color="medium">{ props.function }</IonText>
+          <IonText color="medium">{props.function}</IonText>
         </div>
       </IonRow>
     </IonCol>
-  )
-}
+  );
+};
 
 export default SlateGridHamiltonItem;

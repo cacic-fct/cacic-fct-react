@@ -20,8 +20,8 @@ const Home = () => {
     {
       title: "Manual dos Calouros",
       icon: "informationCircle",
-      url: "https://fct-pp.web.app/manual-do-calouro"
-    }
+      url: "https://fct-pp.web.app/manual-do-calouro",
+    },
   ];
 
   return (

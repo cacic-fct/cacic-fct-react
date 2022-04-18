@@ -3,20 +3,26 @@ const Privacidade = () => (
     <p>
       A Pol&iacute;tica de Privacidade On-Line do site do
       <strong> CACiC</strong> (https://cacic-fct.web.app) foi criada para
-      respeitar a LGPD (<a
+      respeitar a LGPD (
+      <a
         href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm"
         target="_blank"
         rel="noopener"
-        >Lei Geral de Prote&ccedil;&atilde;o de Dados</a
-      >) e afirmar o nosso compromisso com a seguran&ccedil;a e a privacidade
-      das informa&ccedil;&otilde;es coletadas dos visitantes de nosso site. Esta
+      >
+        Lei Geral de Prote&ccedil;&atilde;o de Dados
+      </a>
+      ) e afirmar o nosso compromisso com a seguran&ccedil;a e a privacidade das
+      informa&ccedil;&otilde;es coletadas dos visitantes de nosso site. Esta
       pol&iacute;tica est&aacute; sujeita a eventuais atualiza&ccedil;&otilde;es
       e recomendamos que ela seja consultada periodicamente. Voc&ecirc; pode
       visitar nosso site sem precisar fornecer nenhuma informa&ccedil;&atilde;o
       pessoal. Mas, caso isso aconte&ccedil;a, esta pol&iacute;tica procura
       esclarecer como coletamos e tratamos seus dados pessoais.
     </p>
-    <p><br /><br /></p>
+    <p>
+      <br />
+      <br />
+    </p>
     <h2>Como tratamos os dados</h2>
     <ol>
       <li>
@@ -63,7 +69,10 @@ const Privacidade = () => (
         <a href="mailto:cacic.fct@gmail.com">cacic.fct@gmail.com</a>.
       </li>
     </ol>
-    <p><br /><br /></p>
+    <p>
+      <br />
+      <br />
+    </p>
     <h2>Como coletamos os dados</h2>
     <ul>
       <li>
@@ -79,9 +88,11 @@ const Privacidade = () => (
           href="https://policies.google.com/privacy?hl=pt-BR"
           target="_blank"
           rel="noopener"
-          >pol&iacute;tica de privacidade da Google</a
-        >, para mais informa&ccedil;&otilde;es leia a Pol&iacute;tica
-        diretamente no site da Google.
+        >
+          pol&iacute;tica de privacidade da Google
+        </a>
+        , para mais informa&ccedil;&otilde;es leia a Pol&iacute;tica diretamente
+        no site da Google.
       </li>
       <li>
         <strong>Google Forms.</strong> Eventualmente podemos coletar dados
@@ -91,7 +102,10 @@ const Privacidade = () => (
         nome completo, telefone, e-mail e informa&ccedil;&otilde;es triviais.
       </li>
     </ul>
-    <p><br /><br /></p>
+    <p>
+      <br />
+      <br />
+    </p>
     <h2>Consentimento ou Bloqueio de Cookies</h2>
     <p>
       Para que os recursos de coleta de dados em nosso site funcione
@@ -101,7 +115,10 @@ const Privacidade = () => (
       e n&atilde;o colocam a sua navega&ccedil;&atilde;o em risco, no entanto,
       &eacute; de seu direito bloquear nossos cookies caso queira.
     </p>
-    <p><br /><br /></p>
+    <p>
+      <br />
+      <br />
+    </p>
     <h2>Seus Direitos</h2>
     <p>Voc&ecirc; tem os seguintes direitos:</p>
     <ul>
@@ -130,13 +147,14 @@ const Privacidade = () => (
       estendido em per&iacute;odo de festas, feriados prolongados, recesso e
       f&eacute;rias coletivas.
     </p>
-    <p style={{textAlign: "right"}}>
-      <br /><em>
-        Esta pol&iacute;tica de privacidade foi atualizada em 14/01/2022<em
-        > </em
-      ></em>
+    <p style={{ textAlign: "right" }}>
+      <br />
+      <em>
+        Esta pol&iacute;tica de privacidade foi atualizada em 14/01/2022
+        <em> </em>
+      </em>
     </p>
   </div>
-)
+);
 
 export default Privacidade;

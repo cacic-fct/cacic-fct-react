@@ -69,7 +69,7 @@ const Menu: React.FC = () => {
             );
           })}
         </IonList>
-        <IonGrid style={{maxWidth: 300}}>
+        <IonGrid style={{ maxWidth: 300 }}>
           <IonRow>
             <IonCol>
               <IonButton href="https://instagram.com/cacic.fct" fill="clear">
@@ -93,7 +93,7 @@ const Menu: React.FC = () => {
               <IonMenuToggle auto-hide="false">
                 <IonButton
                   color="medium"
-                  style={{textDecoration: "underline"}}
+                  style={{ textDecoration: "underline" }}
                   fill="clear"
                   routerLink="/privacidade"
                   routerDirection="root"
@@ -107,7 +107,7 @@ const Menu: React.FC = () => {
               <IonMenuToggle auto-hide="false">
                 <IonButton
                   color="medium"
-                  style={{textDecoration: "underline"}}
+                  style={{ textDecoration: "underline" }}
                   fill="clear"
                   routerLink="/sobre"
                   routerDirection="root"

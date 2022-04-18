@@ -14,64 +14,64 @@ const SlateGridHamilton = () => {
     <IonGrid className="grid">
       <IonRow>
         <SlateGridHamiltonItem
-        image="mariana-alves"
-        name="Mariana Alves"
-        function="Presidenta"
+          image="mariana-alves"
+          name="Mariana Alves"
+          function="Presidenta"
         />
 
         <SlateGridHamiltonItem
-        image="willian-murayama"
-        name="Willian Murayama"
-        function="Vice-presidente"
+          image="willian-murayama"
+          name="Willian Murayama"
+          function="Vice-presidente"
         />
       </IonRow>
 
       <IonRow>
         <SlateGridHamiltonItem
-        image="andressa-yida"
-        name="Andressa Yida"
-        function="Relações públicas"
+          image="andressa-yida"
+          name="Andressa Yida"
+          function="Relações públicas"
         />
         <SlateGridHamiltonItem
-        image="guilherme-tomiasi"
-        name="Guilherme Tomiasi"
-        function="Finanças"
+          image="guilherme-tomiasi"
+          name="Guilherme Tomiasi"
+          function="Finanças"
         />
         <SlateGridHamiltonItem
-        image="rafael-rosseto"
-        name="Rafael Rosseto"
-        function="Finanças"
-        />
-      </IonRow>
-
-      <IonRow>
-        <SlateGridHamiltonItem
-        image="daniel-monteiro"
-        name="Daniel Monteiro"
-        function="Eventos"
-        />
-        <SlateGridHamiltonItem
-        image="carlos-santana"
-        name="Carlos Santana"
-        function="Comunicação"
-        />
-        <SlateGridHamiltonItem
-        image="victor-eiji"
-        name="Victor Eiji"
-        function="Comunicação"
+          image="rafael-rosseto"
+          name="Rafael Rosseto"
+          function="Finanças"
         />
       </IonRow>
 
       <IonRow>
         <SlateGridHamiltonItem
-        image="renan-araujo"
-        name="Renan Araújo"
-        function="Ex-vice-presidente"
+          image="daniel-monteiro"
+          name="Daniel Monteiro"
+          function="Eventos"
         />
         <SlateGridHamiltonItem
-        image="rafael-chinaglia"
-        name="Rafael Chinaglia"
-        function="Ex-comunicação"
+          image="carlos-santana"
+          name="Carlos Santana"
+          function="Comunicação"
+        />
+        <SlateGridHamiltonItem
+          image="victor-eiji"
+          name="Victor Eiji"
+          function="Comunicação"
+        />
+      </IonRow>
+
+      <IonRow>
+        <SlateGridHamiltonItem
+          image="renan-araujo"
+          name="Renan Araújo"
+          function="Ex-vice-presidente"
+        />
+        <SlateGridHamiltonItem
+          image="rafael-chinaglia"
+          name="Rafael Chinaglia"
+          function="Ex-comunicação"
         />
       </IonRow>
     </IonGrid>
