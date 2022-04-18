@@ -5,15 +5,15 @@ import {
   IonCardTitle,
   IonText,
 } from "@ionic/react";
-import "./card.scss";
+import "./card-with-date.scss";
 
-interface CardProps {
+interface CardWithDateProps {
   title: string;
-  date?: string;
+  date: string;
   description: string;
 }
 
-const Card = (props: CardProps) => {
+const CardWithDate = (props: CardWithDateProps) => {
   return (
     <IonCard>
       <IonCardHeader>
@@ -30,4 +30,4 @@ const Card = (props: CardProps) => {
   );
 };
 
-export default Card;
+export default CardWithDate;

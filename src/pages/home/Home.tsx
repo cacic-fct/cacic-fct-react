@@ -1,23 +1,27 @@
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
-import { calendar, people } from "ionicons/icons";
 import CardWrapper from "../../components/card-wrapper/card-wrapper";
 
-import Card from "../../components/card/card";
 import LinkItem from "../../components/link-item/link-item";
-import SlateGridHamilton from "../../components/slate-grid-hamilton/slate-grid-hamilton";
+import SlateGridHamilton from "./components/slate-grid-hamilton/slate-grid-hamilton";
+import CardWithDate from "../../components/card-with-date/card-with-date";
 
 const Home = () => {
   const urlList = [
     {
       title: "Calendário do câmpus",
-      icon: calendar,
+      icon: "calendar",
       url: "https://www.fct.unesp.br/#!/administracao/graduacao/espaco-do-aluno/",
     },
     {
-      title: "Calouros",
-      icon: people,
-      url: "https://cacic-fct.web.app/calouros",
+      title: "Página dos Calouros",
+      icon: "people",
+      url: "https://fct-pp.web.app/calouros",
     },
+    {
+      title: "Manual dos Calouros",
+      icon: "informationCircle",
+      url: "https://fct-pp.web.app/manual-do-calouro"
+    }
   ];
 
   return (
@@ -25,7 +29,7 @@ const Home = () => {
       <IonGrid>
         <IonRow>
           <IonCol>
-            <Card
+            <CardWithDate
               title="Retorno do presencial"
               date="04/04/2022"
               description="Data da 1ª aula, geral para o câmpus. Sujeito a alterações."

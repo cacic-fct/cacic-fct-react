@@ -54,7 +54,7 @@ const ArvoreLinks = () => {
       <CardWrapper title="Eventos">
         {eventosList.map((entry, index) => (
           <LinkItem
-            icon={getIoniconByString(entry.icon)}
+            icon={entry.icon}
             title={entry.title}
             url={entry.url}
             content={entry.content}

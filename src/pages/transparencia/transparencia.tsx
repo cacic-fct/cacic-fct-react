@@ -83,8 +83,6 @@ const CardAcao = (props: CardProps) => {
     imageSrc = process.env.PUBLIC_URL + "/assets/openness/placeholder.webp";
   else imageSrc = process.env.PUBLIC_URL + "/assets/openness/" + props.image;
 
-  console.log(urlExists);
-
   return (
     <IonCard
       href={props.url}

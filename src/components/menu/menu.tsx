@@ -1,5 +1,8 @@
 import {
+  IonButton,
+  IonCol,
   IonContent,
+  IonGrid,
   IonIcon,
   IonItem,
   IonLabel,
@@ -8,7 +11,9 @@ import {
   IonMenu,
   IonMenuToggle,
   IonNote,
+  IonRow,
 } from "@ionic/react";
+import { logoInstagram, logoFacebook, mail } from "ionicons/icons";
 import * as Ionicons from "ionicons/icons";
 import { useLocation } from "react-router-dom";
 import "./menu.scss";
@@ -64,6 +69,55 @@ const Menu: React.FC = () => {
             );
           })}
         </IonList>
+        <IonGrid style={{maxWidth: 300}}>
+          <IonRow>
+            <IonCol>
+              <IonButton href="https://instagram.com/cacic.fct" fill="clear">
+                <IonIcon icon={logoInstagram} slot="icon-only"></IonIcon>
+              </IonButton>
+            </IonCol>
+            <IonCol>
+              <IonButton href="https://facebook.com/cacic.fct" fill="clear">
+                <IonIcon icon={logoFacebook} slot="icon-only"></IonIcon>
+              </IonButton>
+            </IonCol>
+            <IonCol>
+              <IonButton href="mailto:cacic.fct@gmail.com" fill="clear">
+                <IonIcon icon={mail} slot="icon-only"></IonIcon>
+              </IonButton>
+            </IonCol>
+          </IonRow>
+
+          <IonRow>
+            <IonCol className="ion-text-center">
+              <IonMenuToggle auto-hide="false">
+                <IonButton
+                  color="medium"
+                  style={{textDecoration: "underline"}}
+                  fill="clear"
+                  routerLink="/privacidade"
+                  routerDirection="root"
+                >
+                  Política de privacidade
+                </IonButton>
+              </IonMenuToggle>
+            </IonCol>
+
+            <IonCol className="ion-text-center">
+              <IonMenuToggle auto-hide="false">
+                <IonButton
+                  color="medium"
+                  style={{textDecoration: "underline"}}
+                  fill="clear"
+                  routerLink="/sobre"
+                  routerDirection="root"
+                >
+                  Sobre este site
+                </IonButton>
+              </IonMenuToggle>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
       </IonContent>
     </IonMenu>
   );

@@ -1,7 +1,7 @@
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
 
 import { calendar, analytics, book } from "ionicons/icons";
-import Card from "../../components/card/card";
+import CardWithDate from "../../components/card-with-date/card-with-date";
 import LinkItem from "../../components/link-item/link-item";
 import LinkItemDate from "../../components/link-item-date/link-item-date";
 import CardWrapper from "../../components/card-wrapper/card-wrapper";
@@ -12,17 +12,17 @@ const Pandemia = () => {
   const urlList = [
     {
       title: "Calendário do câmpus",
-      icon: calendar,
+      icon: "calendar",
       url: "https://www.fct.unesp.br/#!/administracao/graduacao/espaco-do-aluno/",
     },
     {
       title: "Casos de COVID-19 em Prudente",
-      icon: analytics,
+      icon: "analytics",
       url: "https://inovaprudente.com.br/coronavirus",
     },
     {
       title: "Diretrizes para a reorganização das atividades",
-      icon: book,
+      icon: "book",
       url: "https://unesp.br/portal#!/covid19/reorganizacao-das-atividades/estrategia/",
     },
   ];
@@ -31,7 +31,7 @@ const Pandemia = () => {
     <IonGrid>
       <IonRow>
         <IonCol>
-          <Card
+          <CardWithDate
             title="Retorno do presencial"
             date="04/04/2022"
             description="Data da 1ª aula, geral para o câmpus. Sujeito a alterações."

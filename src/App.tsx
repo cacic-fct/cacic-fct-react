@@ -20,6 +20,8 @@ import CardWrapper from "./components/card-wrapper/card-wrapper";
 import Eventos from "./pages/eventos/eventos";
 import Transparencia from "./pages/transparencia/transparencia";
 import ArvoreLinks from "./pages/arvore-links/arvore-links";
+import Privacidade from "./pages/privacidade/privacidade";
+import Sobre from "./pages/sobre/sobre";
 
 setupIonicReact();
 
@@ -61,6 +63,16 @@ const App: React.FC = () => {
             <Route path="/links" exact={true}>
               <PageLayout title="Árvore de Links">
                 <ArvoreLinks />
+              </PageLayout>
+            </Route>
+            <Route path="/privacidade" exact={true}>
+              <PageLayout title="Política de privacidade">
+                <Privacidade />
+              </PageLayout>
+            </Route>
+            <Route path="/sobre" exact={true}>
+              <PageLayout title="Sobre este site">
+                <Sobre />
               </PageLayout>
             </Route>
           </IonRouterOutlet>

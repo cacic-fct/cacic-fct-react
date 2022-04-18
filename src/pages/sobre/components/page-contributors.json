@@ -1,0 +1,84 @@
+{
+  "people": [
+    {
+      "name": "Renan Yudi Yaguinuma Bersan de Araujo",
+      "avatar": "renan-araujo",
+      "emailAcademic": "renan.yudi",
+      "lattes": "3507649024960199",
+      "website": "https://yudi.github.io/",
+      "enrollmentYear": "2020",
+      "social": {
+        "github": "yudi",
+        "instagram": "yyaguinuma",
+        "linkedin": "renanyudi"
+      }
+    },
+    {
+      "name": "Willian Yoshio Murayama",
+      "avatar": "willian-murayama",
+      "emailAcademic": "willian.murayama",
+      "enrollmentYear": "2021",
+      "social": {
+        "github": "willshobwish"
+      }
+    }
+  ],
+  "socialMediaURL": [
+    {
+      "smName": "linkedin",
+      "baseHref": "https://linkedin.com/in/"
+    },
+    {
+      "smName": "twitter",
+      "baseHref": "https://twitter.com/"
+    },
+    {
+      "smName": "facebook",
+      "baseHref": "https://fb.com/"
+    },
+    {
+      "smName": "instagram",
+      "baseHref": "https://instagram.com/"
+    },
+    {
+      "smName": "youtube",
+      "baseHref": "https://youtube.com/c/"
+    },
+    {
+      "smName": "medium",
+      "baseHref": "https://medium.com/@"
+    },
+    {
+      "smName": "flickr",
+      "baseHref": "https://flickr.com/photos/"
+    },
+    {
+      "smName": "twitch",
+      "baseHref": "https://twitch.tv/"
+    },
+    {
+      "smName": "soundcloud",
+      "baseHref": "https://soundcloud.com/"
+    },
+    {
+      "smName": "spotify",
+      "baseHref": "https://open.spotify.com/user/"
+    },
+    {
+      "smName": "reddit",
+      "baseHref": "https://reddit.com/u/"
+    },
+    {
+      "smName": "deviantart",
+      "baseHref": "https://deviantart.com/"
+    },
+    {
+      "smName": "steam",
+      "baseHref": "https://steamcommunity.com/id/"
+    },
+    {
+      "smName": "xbox",
+      "baseHref": "http://live.xbox.com/Profile?Gamertag="
+    }
+  ]
+}
