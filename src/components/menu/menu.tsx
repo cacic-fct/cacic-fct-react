@@ -3,7 +3,6 @@ import {
   IonCol,
   IonContent,
   IonGrid,
-  IonIcon,
   IonItem,
   IonLabel,
   IonList,
@@ -13,15 +12,10 @@ import {
   IonNote,
   IonRow,
 } from "@ionic/react";
-import { logoInstagram, logoFacebook, mail } from "ionicons/icons";
-import * as Ionicons from "ionicons/icons";
 import { useLocation } from "react-router-dom";
 import "./menu.scss";
 import menuItems from "./menu-items.json";
-
-// Permite resgatar os Ionicons a partir de uma string
-// Se não existir um Ionicon associado à string, retorna undefined
-const IoniconsByString = Ionicons as Record<string, string | undefined>;
+import PIonIcon from "../proper-ion-icon/proper-ion-icon";
 
 interface AppPage {
   url: string;
@@ -30,12 +24,7 @@ interface AppPage {
   title: string;
 }
 
-const appPages: AppPage[] = menuItems.map((entry) => ({
-  title: entry.title,
-  url: entry.url,
-  iosIcon: IoniconsByString[entry.iosIcon],
-  mdIcon: IoniconsByString[entry.mdIcon],
-}));
+const appPages: AppPage[] = menuItems;
 
 const Menu: React.FC = () => {
   const location = useLocation();
@@ -58,10 +47,11 @@ const Menu: React.FC = () => {
                   lines="none"
                   detail={false}
                 >
-                  <IonIcon
+                  <PIonIcon
                     slot="start"
-                    ios={appPage.iosIcon}
+                    icon={appPage.mdIcon}
                     md={appPage.mdIcon}
+                    ios={appPage.iosIcon}
                   />
                   <IonLabel>{appPage.title}</IonLabel>
                 </IonItem>
@@ -73,17 +63,17 @@ const Menu: React.FC = () => {
           <IonRow>
             <IonCol>
               <IonButton href="https://instagram.com/cacic.fct" fill="clear">
-                <IonIcon icon={logoInstagram} slot="icon-only"></IonIcon>
+                <PIonIcon icon="logoInstagram" slot="icon-only" />
               </IonButton>
             </IonCol>
             <IonCol>
               <IonButton href="https://facebook.com/cacic.fct" fill="clear">
-                <IonIcon icon={logoFacebook} slot="icon-only"></IonIcon>
+                <PIonIcon icon="logoFacebook" slot="icon-only" />
               </IonButton>
             </IonCol>
             <IonCol>
               <IonButton href="mailto:cacic.fct@gmail.com" fill="clear">
-                <IonIcon icon={mail} slot="icon-only"></IonIcon>
+                <PIonIcon icon="mail" slot="icon-only" />
               </IonButton>
             </IonCol>
           </IonRow>

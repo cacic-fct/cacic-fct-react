@@ -2,14 +2,13 @@ import {
   IonAvatar,
   IonButton,
   IonCol,
-  IonIcon,
   IonItem,
   IonLabel,
   IonList,
   IonListHeader,
   IonRow,
 } from "@ionic/react";
-import getIoniconByString from "../../../utils/ionicon";
+import PIonIcon from "../../../components/proper-ion-icon/proper-ion-icon";
 import PageContributorsData from "./page-contributors.json";
 
 const PageContributors = () => {
@@ -43,7 +42,7 @@ const PageContributors = () => {
                   <IonButton
                     href={"mailto:" + entry.emailAcademic + "@unesp.br"}
                   >
-                    <IonIcon icon={getIoniconByString("mailOutline")} />
+                    <PIonIcon icon="mailOutline" />
                   </IonButton>
                 ) : null}
 
@@ -52,13 +51,13 @@ const PageContributors = () => {
                     href={"https://lattes.cnpq.br/" + entry.lattes}
                     target="_blank"
                   >
-                    <IonIcon icon={getIoniconByString("schoolOutline")} />
+                    <PIonIcon icon="schoolOutline" />
                   </IonButton>
                 ) : null}
 
                 {entry.website ? (
                   <IonButton href={entry.website} target="_blank">
-                    <IonIcon icon={getIoniconByString("globeOutline")} />
+                    <PIonIcon icon="globeOutline" />
                   </IonButton>
                 ) : null}
               </IonCol>

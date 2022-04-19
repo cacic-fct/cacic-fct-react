@@ -2,13 +2,25 @@ import { IonButton } from "@ionic/react";
 import "./eventos.scss";
 
 const Eventos = () => {
-  const youtube: Array<String> = [
+  const youtube: Array<string> = [
     "i_STkDJ3z5s",
     "9myJMm-8S90",
     "FN18datZk1M",
     "GrVpFnxXQoY",
     "0ku7FR5Tfv0",
   ];
+
+  const YoutubeIFrame = (props: { src: string }) => (
+    <iframe
+      width="400"
+      height="225"
+      src={"https://youtube.com/embed/" + props.src}
+      frameBorder="0"
+      allow="encrypted-media; picture-in-picture"
+      className="margin-auto-horizontal youtube-iframe"
+      allowFullScreen
+    />
+  );
 
   return (
     <div id="outer-div">
@@ -42,15 +54,7 @@ const Eventos = () => {
         </p>
         <h2>Confira os replays</h2>
         {youtube.map((entry) => (
-          <iframe
-            width="400"
-            height="225"
-            src={"https://youtube.com/embed/" + entry}
-            frameBorder="0"
-            allow="encrypted-media; picture-in-picture"
-            className="margin-auto-horizontal youtube-iframe"
-            allowFullScreen
-          />
+          <YoutubeIFrame src={entry} />
         ))}
       </div>
       <IonButton

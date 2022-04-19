@@ -1,6 +1,4 @@
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
-
-import { calendar, analytics, book } from "ionicons/icons";
 import CardWithDate from "../../components/card-with-date/card-with-date";
 import LinkItem from "../../components/link-item/link-item";
 import LinkItemDate from "../../components/link-item-date/link-item-date";
